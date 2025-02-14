@@ -1,0 +1,51 @@
+.hero-section.contact-us {
+  background-image: url("../../../assets/contactUs-bg.png"),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-us .map-icons i {
+  font-size: 20px;
+  color: var(--text-dark-color);
+  background-color: #e8e8e8;
+  padding: 10px;
+  margin-left: 10px;
+  transition: all 0.4s ease;
+}
+
+.contact-us .map-icons a:hover i {
+  background-color: #2f5163;
+  color: var(--text-white-color);
+}
+
+.contact-us .address-detailes span {
+  color: var(--text-dark-color);
+}
+
+.address-detailes i {
+  color: var(--main-color);
+}
+
+.contact-us .map {
+  position: relative;
+}
+
+.contact-us .map::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  height: 100%;
+  border-left: 2px dotted #e8e8e8;
+}
+
+.contact-us .form label {
+  color: var(--gray-color);
+}
+
+.contact-us .form .form-control:focus {
+  background-color: #fff;
+  border-color: var(--yellow-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255, 165, 0, 0.5);
+}

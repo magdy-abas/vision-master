@@ -1,0 +1,110 @@
+<section
+  class="hero-section vh-hero contact-us overflow-hidden d-flex justify-content-center align-items-center text-center">
+  <div class="container">
+    <div>
+      <h2>
+        {{ 'contact.title' | translate }}
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- hero-section -->
+<!-- contact  -->
+<section class="contact-us">
+  <div class="container py-5">
+    <div class="main-title text-center mb-5">
+      <h3 class="position-relative d-inline-block">{{ 'contact.send_message' | translate }}</h3>
+      <div class="line bg-yellow-color pt-1 mb-4 mx-auto"></div>
+    </div>
+    <div class="row gx-5">
+      <!-- form  -->
+      <form class="form col-md-6 order-last order-md-first">
+        <div class="d-md-flex  ">
+          <div class="col-12 col-md-6">
+            <div class="form-floating me-md-3 ms-md-3 mb-3">
+              <input [(ngModel)]="form.name" type="text" name="name" class="form-control" id="nameInput"
+                placeholder="{{ 'contact.form.name' | translate }}">
+              <label for="nameInput">{{ 'contact.form.name' | translate }}</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form-floating mb-3">
+              <input [(ngModel)]="form.email" type="email" name="email" class="form-control" id="emailInput"
+                placeholder="{{ 'contact.form.email' | translate }}">
+              <label for="emailInput">{{ 'contact.form.email' | translate }}</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-md-flex">
+          <div class="col-12 col-md-6">
+            <div class="form-floating me-md-3 ms-md-3 mb-3">
+              <input [(ngModel)]="form.company" name="company" type="text" class="form-control" id="companyInput"
+                placeholder="{{ 'contact.form.company' | translate }}">
+              <label for="companyInput">{{ 'contact.form.company' | translate }}</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form-floating mb-3">
+              <input [(ngModel)]="form.website" name="website" type="text" class="form-control" id="webInput"
+                placeholder="{{ 'contact.form.website' | translate }}">
+              <label for="webInput">{{ 'contact.form.website' | translate }}</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-md-flex">
+          <div class="col-12 col-md-6">
+            <div class="form-floating me-md-3 ms-md-3 mb-3">
+              <input [(ngModel)]="form.country" name="country" type="text" class="form-control" id="countryInput"
+                placeholder="{{ 'contact.form.country' | translate }}">
+              <label for="countryInput">{{ 'contact.form.country' | translate }}</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form-floating mb-3">
+              <input [(ngModel)]="form.phone" name="phone" type="tel" class="form-control" id="phoneInput"
+                placeholder="{{ 'contact.form.phone' | translate }}">
+              <label for="phoneInput">{{ 'contact.form.phone' | translate }}</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-floating">
+            <textarea [(ngModel)]="form.message" name="message" class="form-control"
+              placeholder="{{ 'contact.form.message' | translate }}" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">{{ 'contact.form.message' | translate }}</label>
+          </div>
+          <button (click)="submitForm()" class="btn  btn-dark-blue btn-dark k w-100 mt-4">{{ 'contact.form.submit' |
+            translate }}</button>
+        </div>
+      </form>
+      <!-- map sec  -->
+      <div class="map col-md-6 py-5 py-md-0 order-first order-md-last">
+        <div class="col-12">
+          <div style="width: 100%">
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=samanoud+(vision)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+              <a href="https://www.gps.ie/">gps trackers</a></iframe>
+          </div>
+        </div>
+        <div class="map-icons mt-2 d-flex mb-4 justify-content-md-end">
+          <a href="#"> <i class="rounded-circle fa-brands fa-whatsapp"></i></a>
+          <a href="#"> <i class="rounded-circle fa-brands fa-facebook"></i></a>
+          <a href="#"> <i class="rounded-circle fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="rounded-circle fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="ms-3 address-detailes d-flex flex-column">
+          <span class="mb-2 fs-6 fw-semibold"><i class="fa-solid fa-phone me-2"></i>{{ 'contact.address.phone' |
+            translate }}</span>
+          <span class="mb-2 fs-6 fw-semibold"><i class="fa-solid fa-envelope me-2"></i>{{ 'contact.address.email' |
+            translate }}</span>
+          <span class="mb-2 fs-6 fw-semibold"><i class="fa-solid fa-location-dot me-2"></i>{{ 'contact.address.location'
+            | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

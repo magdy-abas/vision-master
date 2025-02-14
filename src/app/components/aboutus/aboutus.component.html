@@ -1,0 +1,139 @@
+<section
+  class="vh-hero hero-section about-us overflow-hidden text-center d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div>
+      <h2>{{ 'about.about_us' | translate }}</h2>
+    </div>
+  </div>
+</section>
+<!-- hero-section -->
+
+<!-- about-us -->
+<section class="about-us py-5 overflow-hidden">
+  <div class="main-title text-center mb-5">
+    <h3 class="position-relative d-inline-block">{{ 'about.our_story' | translate }}</h3>
+    <div class="line bg-yellow-color pt-1 mb-4 mx-auto"></div>
+  </div>
+
+  <div class="container position-relative">
+    <div class="vertical-line-container">
+
+      <div class="row justify-content-between g-3 d-flex py-5">
+        <div class="col-md-5 py-5 order-last order-md-first">
+          <div class="story-p wow animate__animated"
+            [ngClass]="{'animate__slideInLeft': isLeft, 'animate__slideInRight': !isLeft}">
+            <p>{{ 'about.welcome_paragraph_1' | translate }}</p>
+            <p>{{ 'about.welcome_paragraph_2' | translate }}</p>
+          </div>
+        </div>
+
+        <div class="col-md-5 py-5 order-first order-md-last">
+          <div class="story-img position-relative ">
+            <div class="img-layer  wow animate__animated"
+              [ngClass]="{'animate__slideInRight': isLeft, 'animate__slideInLeft': !isLeft}">
+              <img src="./assets/about-us/about-1.png" class="position-absolute start-0 thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-2.png" class="img-fluid thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-3.png" class="position-absolute thumbnail" alt="img-story">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vertical-line"></div>
+      <div class="circle top-0"></div>
+      <div class="circle bottom-0"></div>
+
+      <div class="row d-flex justify-content-between g-3">
+
+        <div class="col-md-5 py-5">
+          <div class="story-img position-relative">
+            <div class="img-layer text-center wow animate__animated "
+              [ngClass]="{'animate__slideInLeft': isLeft, 'animate__slideInRight': !isLeft}">
+              >
+              <img src="./assets/about-us/about-4.png" class="position-absolute start-0 thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-8.png" class="img-fluid thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-6.png" class="position-absolute thumbnail" alt="img-story">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-5 mt-3 py-5">
+
+          <div class="story-p wow animate__animated "
+            [ngClass]="{'animate__slideInRight': isLeft, 'animate__slideInLeft': !isLeft}">
+
+            <p>{{ 'about.location_paragraph' | translate }}</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="circle"></div>
+
+      <div class="row justify-content-between g-3 d-flex py-5">
+        <div class="col-md-5 py-5 order-last order-md-first">
+          <div class="story-p wow animate__animated"
+            [ngClass]="{'animate__slideInLeft': isLeft, 'animate__slideInRight': !isLeft}">
+
+            <p>{{ 'about.welcome_paragraph_1' | translate }}</p>
+            <p>{{ 'about.welcome_paragraph_2' | translate }}</p>
+          </div>
+        </div>
+
+        <div class="col-md-5 py-5 order-first order-md-last">
+          <div class="story-img position-relative ">
+            <div class="img-layer text-center wow animate__animated"
+              [ngClass]="{'animate__slideInRight': isLeft, 'animate__slideInLeft': !isLeft}">
+              <img src="./assets/about-us/about-1.png" class="position-absolute start-0 thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-2.png" class="img-fluid thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-3.png" class="position-absolute thumbnail" alt="img-story">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-between g-3">
+
+        <div class="col-md-5 py-5">
+          <div class="story-img position-relative">
+            <div class="img-layer text-center wow animate__animated "
+              [ngClass]="{'animate__slideInLeft': isLeft, 'animate__slideInRight': !isLeft}">
+
+              <img src="./assets/about-us/about-4.png" class="position-absolute start-0 thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-8.png" class="img-fluid thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-6.png" class="position-absolute thumbnail" alt="img-story">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-5 mt-3 py-5">
+          <div class="story-p wow animate__animated "
+            [ngClass]="{'animate__slideInRight': isLeft, 'animate__slideInLeft': !isLeft}">
+
+            <p>{{ 'about.location_paragraph' | translate }}</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row justify-content-between g-3 d-flex py-5">
+        <div class="col-md-5 py-5 order-last order-md-first">
+          <div class="story-p wow animate__animated"
+            [ngClass]="{'animate__slideInLeft': isLeft, 'animate__slideInRight': !isLeft}">
+            <p>{{ 'about.welcome_paragraph_1' | translate }}</p>
+            <p>{{ 'about.welcome_paragraph_2' | translate }}</p>
+          </div>
+        </div>
+
+        <div class="col-md-5 py-5 order-first order-md-last">
+          <div class="story-img position-relative ">
+            <div class="img-layer text-center wow animate__animated"
+              [ngClass]="{'animate__slideInRight': isLeft, 'animate__slideInLeft': !isLeft}">
+              <img src="./assets/about-us/about-1.png" class="position-absolute start-0 thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-2.png" class="img-fluid thumbnail" alt="img-story">
+              <img src="./assets/about-us/about-3.png" class="position-absolute thumbnail" alt="img-story">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

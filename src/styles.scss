@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+@import "ngx-toastr/toastr";
+
+:root {
+  --main-color: #172f3b;
+  --second-color: #3b2317;
+  --text-dark-color: #222222;
+  --text-white-color: #eee;
+  --yellow-color: #ffa500;
+  --gray-color: #808080;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.cr {
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.hero-section {
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 50vh;
+}
+
+.hero-section h2 {
+  color: var(--text-white-color);
+  font-size: 9vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  text-wrap: nowrap;
+}
+
+.hero-section p {
+  color: var(--text-white-color);
+}
+
+.main-title h3 {
+  color: var(--text-dark-color);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.main-title h3:after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(assets/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+/* -------------------------------------------------------
+                       Utilities
+  -------------------------------------------------------- */
+.vh-50 {
+  height: 50vh;
+}
+.vh-hero {
+  height: 50vh !important;
+}
+.bg-dark-blue {
+  background-color: var(--main-color);
+}
+
+.bg-yellow-color {
+  background-color: var(--yellow-color);
+}
+
+.btn-dark-blue {
+  background-color: #2f5163 !important;
+  transition: all 0.6s ease;
+}
+
+.btn-dark-blue:hover {
+  background-color: #283f4b !important;
+}
+
+.bg-off-white {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu.animation {
+    display: block;
+    margin-top: 0;
+  }
+
+  .dropend:hover .dropdown-menu.animation-end {
+    display: block !important;
+    position: absolute;
+    left: 155px;
+    top: 0px;
+  }
+}
+
+.owl-dots {
+  position: absolute;
+
+  bottom: 10px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 1000;
+}
+
+.owl-dots .owl-dot {
+  margin: 0 5px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ffa500;
+}
+
+.line {
+  width: 15%;
+}

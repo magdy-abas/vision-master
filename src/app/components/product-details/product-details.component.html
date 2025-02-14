@@ -1,0 +1,44 @@
+<section class="pt-5 d-flex align-items-center">
+  <div class="container mt-5 p-4">
+    <div class="row g-5">
+      <div class="col-md-12 d-md-none">
+        <owl-carousel-o [options]="customOptionsDetailes">
+          @for (product of detailesProduct?.secondaryImages; track $index) {
+          <ng-template carouselSlide>
+            <img loading="lazy" [src]="product" class="w-100 cr mx-auto object-fit-contain">
+          </ng-template>
+          }
+        </owl-carousel-o>
+      </div>
+
+      <div class="col-md-6 d-md-block d-flex align-content-center mt-2">
+        <div>
+          <h1 class="fw-bolder">{{ detailesProduct?.name }}</h1>
+          <p class="h4 mb-4">{{ detailesProduct?.Details }}</p>
+          <p class="fw-bold h5">
+            {{ 'productDetails.categories' | translate }}
+            <span class="h5 ms-2 btn-dark-blue btn text-white">{{ detailesProduct?.mainCatigory }}</span>
+            <span class="h5 ms-2 btn-dark-blue btn text-white">{{ detailesProduct?.subCatigory }}</span>
+            @if (detailesProduct?.subCatigoryDetailes) {
+            <span class="h5 ms-2 btn-dark-blue btn text-white">
+              {{ detailesProduct?.subCatigoryDetailes }}</span>
+            }
+          </p>
+
+          <a routerLink="/contact" class="btn-outline-dark btn  more-details-btn mt-3">{{ 'productDetails.moreDetails' |
+            translate }}</a>
+        </div>
+      </div>
+
+      <div class="col-md-5 d-none d-md-block">
+        <owl-carousel-o [options]="customOptionsDetailes">
+          @for (product of detailesProduct?.secondaryImages; track $index) {
+          <ng-template carouselSlide>
+            <img [src]="product" class="w-75 cr mx-auto object-fit-contain">
+          </ng-template>
+          }
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>

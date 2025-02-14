@@ -1,0 +1,163 @@
+<section class="hero-section products overflow-hidden d-flex justify-content-center align-items-center text-center">
+  <div class="container">
+    <div>
+      <h2>{{ 'Dashboard.dashboard' | translate }}</h2>
+    </div>
+  </div>
+</section>
+
+<section class="products-section py-3">
+  <div class="container mt-2">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      {{ 'Dashboard.add_product' | translate }}
+    </button>
+
+    <!-- Modal -->
+    <form #f="ngForm" (ngSubmit)="addProduct(f)" class="p-3">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">{{ 'Dashboard.add_product' | translate
+                }}</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Product name input -->
+              <div class="form-floating mb-3">
+                <input class="form-control" name="name" ngModel #name="ngModel" type="text" id="floatingName"
+                  placeholder="{{ 'Dashboard.product_name' | translate }}">
+                <label for="floatingName">{{ 'Dashboard.product_name' | translate }}</label>
+              </div>
+              <!-- Main Category select -->
+              <div class="form-floating mb-3">
+                <select class="form-select" name="mainCatigory" ngModel #mainCatigory="ngModel" id="floatingSelect">
+                  <option disabled>{{ 'Dashboard.main_category_options.default' | translate
+                    }}</option>
+                  <option value="Coating & decorations colours">{{ 'Dashboard.main_category_options.Coating &
+                    decorations colours' | translate
+                    }}</option>
+                  <option value="Decal">{{ 'Dashboard.main_category_options.decal' | translate }}
+                  </option>
+                  <option value="Glass">{{ 'Dashboard.main_category_options.glass' | translate }}
+                  </option>
+                  <option value="Porcelain">{{ 'Dashboard.main_category_options.porcelain' | translate
+                    }}</option>
+                </select>
+                <label for="floatingSelect">{{ 'Dashboard.main_category' | translate }}</label>
+              </div>
+
+              <!-- Sub Category select -->
+              <div class="form-floating mb-3">
+                <select class="form-select" name="subCatigory" ngModel #subCatigory="ngModel" id="floatingSelect">
+                  <option disabled selected>{{ 'Dashboard.sub_category_options.default' | translate }}
+                  </option>
+                  <option value="Glass & Ceramic colours">{{
+                    'Dashboard.sub_category_options.glass_ceramic_colours' | translate }}</option>
+                  <option value="Organic Colours">{{ 'Dashboard.sub_category_options.organic_colours'
+                    | translate }}</option>
+                  <option value="Luster">{{ 'Dashboard.sub_category_options.luster' | translate }}
+                  </option>
+                  <option value="Materials">{{ 'Dashboard.sub_category_options.materials' | translate
+                    }}</option>
+                  <option value="Plain">{{ 'Dashboard.sub_category_options.plain' | translate }}
+                  </option>
+                  <option value="Decorated">{{ 'Dashboard.sub_category_options.decorated' | translate
+                    }}</option>
+                </select>
+                <label for="floatingSelect">{{ 'Dashboard.sub_category' | translate }}</label>
+              </div>
+
+              <!-- Sub Category Details select -->
+              <div class="form-floating mb-3">
+                <select class="form-select" name="subCatigoryDetailes" ngModel #subCatigoryDetailes="ngModel"
+                  id="floatingSelect">
+                  <option disabled selected>{{ 'Dashboard.sub_category_details_options.default' |
+                    translate }}</option>
+                  <option value="750°-850°">{{ 'Dashboard.sub_category_details_options.temp_range' |
+                    translate }}</option>
+                  <option value="550°-600°">{{ 'Dashboard.sub_category_details_options.temp_range_low'
+                    | translate }}</option>
+                  <option value="solvent based colors">{{
+                    'Dashboard.sub_category_details_options.solvent_based_colours' | translate }}
+                  </option>
+                  <option value="water based colors">{{
+                    'Dashboard.sub_category_details_options.water_based_colours' | translate }}
+                  </option>
+                  <option value="safe food colors">{{
+                    'Dashboard.sub_category_details_options.safe_food_colours' | translate }}
+                  </option>
+                  <option value="paper">{{ 'Dashboard.sub_category_details_options.paper' |
+                    translate }}</option>
+                  <option value="screen printing oil">{{
+                    'Dashboard.sub_category_details_options.screen_printing_oil' | translate }}
+                  </option>
+                  <option value="cover coat">{{ 'Dashboard.sub_category_details_options.cover_coat' |
+                    translate }}</option>
+                  <option value="powder colour">{{
+                    'Dashboard.sub_category_details_options.powder_colour' | translate }}</option>
+                  <option value="custom">{{ 'Dashboard.sub_category_details_options.custom' |
+                    translate }}</option>
+                </select>
+                <label for="floatingSelect">{{ 'Dashboard.sub_category_details' | translate }}</label>
+              </div>
+
+              <!-- Product details -->
+              <div class="form-floating mb-3">
+                <textarea class="form-control" name="Details" ngModel #Details="ngModel" id="floatingTextarea2"
+                  style="height: 100px" placeholder="{{ 'Dashboard.details' | translate }}"></textarea>
+                <label for="floatingTextarea2">{{ 'Dashboard.details' | translate }}</label>
+              </div>
+
+              <!-- Image upload main image -->
+              <div class="form-floating mb-3">
+                <input class="form-control" name="image" (change)="onFileSelected($event)" type="file"
+                  id="formFileMultiple" accept="image/*">
+                <label for="formFileMultiple">{{ 'Dashboard.upload_main_image' | translate }}</label>
+              </div>
+
+              <!-- Image upload secondary images -->
+              <div class="form-floating mb-3">
+                <input class="form-control" name="image" (change)="onFilesSelected($event)" type="file"
+                  id="formFileMultiple" accept="image/*" multiple>
+                <label for="formFileMultiple">{{ 'Dashboard.upload_secondary_images' | translate
+                  }}</label>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'Dashboard.close'
+                | translate }}</button>
+              <button type="button" class="btn btn-warning" (click)="resetForm(f)">{{ 'Dashboard.reset' |
+                translate }}</button>
+              <button #inputElement type="submit" class="btn btn-primary">{{ 'Dashboard.save_changes' | translate
+                }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+      <!-- بداية منتج -->
+      @for (product of products(); track $index) {
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100 shadow rounded rounded-2">
+          <img loading="lazy" src="{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+          <div [routerLink]="['/prodcutDetails', product.id]" class="card-body cr text-center">
+            <h5 class="card-title"> {{ product.name }}</h5>
+            <p> {{ product.subCatigory }}</p>
+            <p> {{ product.Details | truncate:8 }}</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mb-2">
+            <button (click)="removeProduct(product.id)" class="btn btn-danger">{{ 'Dashboard.remove_product'
+              | translate }}</button>
+          </div>
+        </div>
+      </div>
+      }
+      <!-- نهاية منتج -->
+    </div>
+  </div>
+</section>

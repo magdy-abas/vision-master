@@ -1,0 +1,17 @@
+.hero-section.events {
+  background-image: url("../../../assets/bg-events.png"),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-position: center;
+  background-size: cover;
+}
+
+.card-title {
+  color: var(--text-dark-color);
+}
+.events .card {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  transition: all 0.6s ease;
+}
+.events .card:hover {
+  transform: scale(1.06);
+}

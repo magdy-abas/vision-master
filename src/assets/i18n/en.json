@@ -1,0 +1,162 @@
+{
+    "Home": {
+        "COMPANY_INFO_TITLE": "Who We are",
+        "COMPANY_WELCOME_MSG": "Welcome to \"VISION\" your portal to the realm of Egyptian craftsmanship and innovation.",
+        "OUR_PRODUCTS": "Our Products",
+        "COATING": "COATING",
+        "COATING_DESCRIPTION": "A coating is a covering that is applied to the surface of an object.",
+        "DECAL": "DECAL",
+        "DECAL_DESCRIPTION": "A coating is a covering that is applied to the surface of an object.",
+        "PORCELAIN": "PORCELAIN",
+        "PORCELAIN_DESCRIPTION": "A coating is a covering that is applied to the surface of an object.",
+        "GLASS": "GLASS",
+        "GLASS_DESCRIPTION": "A coating is a covering that is applied to the surface of an object.",
+        "DETAILS": "Details",
+        "COATING_PRODUCT_ALT": "Coating product",
+        "DECAL_PRODUCT_ALT": "Decal product",
+        "PORCELAIN_PRODUCT_ALT": "Porcelain product",
+        "Brands": "Brands",
+        "GLASS_PRODUCT_ALT": "Glass product",
+        "testimonial": {
+            "shahd": {
+                "alt": "Shahd",
+                "name": "SHAHD",
+                "title": "The Journey of Maya Johnson",
+                "quote": "In \"Becoming Me: The Journey of Maya Johnson,\" readers will discover the inspiring story of a woman who followed her passions, overcame challenges, and made a difference in the world of technology. Maya's journey serves as a reminder that with determination and perseverance, anything is possible."
+            },
+            "maya": {
+                "alt": "Maya",
+                "name": "MAYA",
+                "title": "The Journey of Maya Johnson",
+                "quote": "In \"Becoming Me: The Journey of Maya Johnson,\" readers will discover the inspiring story of a woman who followed her passions, overcame challenges, and made a difference in the world of technology. Maya's journey serves as a reminder that with determination and perseverance, anything is possible."
+            }
+        }
+    },
+    "navbar": {
+        "lang": "Language",
+        "dashboard": "Dashboard",
+        "en": "English",
+        "ar": "Arabic",
+        "home": "Home",
+        "events": "Events",
+        "product": "Products",
+        "coating": "Coating",
+        "glass_ceramic_colors": "Glass & Ceramic Colors",
+        "organic_colors": "Organic colors",
+        "luster": "Luster",
+        "decal": "Decal",
+        "materials": "Materials",
+        "pattern": "Pattern",
+        "glass": "Glass",
+        "plain_glass": "Plain",
+        "decorated_glass": "Decorated",
+        "porcelain": "Porcelain",
+        "plain_porcelain": "Plain",
+        "decorated_porcelain": "Decorated",
+        "contact_us": "Contact us",
+        "about_us": "About us"
+    },
+    "about": {
+        "about_us": "ABOUT US",
+        "our_story": "Our Story",
+        "welcome_paragraph_1": "Welcome to Vision, your portal to the realm of Egyptian craftsmanship and innovation.",
+        "welcome_paragraph_2": "Based in Egypt, Vision is deeply rooted in the country's rich tradition of artistry, with a focus on glass and porcelain decoration.",
+        "location_paragraph": "Located in Samannoud City, historically renowned for pottery manufacturing, our firm embraces the evolution of craftsmanship.",
+        "commitment_paragraph": "With a commitment to modernization, Vision revitalizes Egypt's glassmaking sector, equipping local manufacturers with cutting-edge technologies and materials.",
+        "participation_paragraph": "Participation in industry events and exhibitions has cemented our role in facilitating collaboration and innovation.",
+        "website_paragraph": "This website marks a pivotal moment for Vision, signaling our ambition to expand globally."
+    },
+    "events": {
+        "title": "EVENTS",
+        "available_events": "available events",
+        "name": "ICES (Intelligent Cities Exhibition & Conference)",
+        "location": "Cairo",
+        "date": "May 2024"
+    },
+    "contact": {
+        "title": "CONTACT US",
+        "send_message": "Send us a message!",
+        "form": {
+            "name": "Name*",
+            "email": "E-Mail*",
+            "company": "Company",
+            "website": "Website",
+            "country": "Country",
+            "phone": "Phone",
+            "message": "Message",
+            "submit": "Submit"
+        },
+        "address": {
+            "phone": "01024980379",
+            "email": "vision@gmail.com",
+            "location": "Samanoud, Gharbia, Egypt. El-Nahas Square, Zayed Tower, 7th Floor, No. 701."
+        }
+    },
+    "footer": {
+        "rights_reserved": "All Rights Reserved"
+    },
+    "Dashboard": {
+        "dashboard": "Dashboard",
+        "main_category": "Main Category",
+        "sub_category": "Sub Category",
+        "sub_category_details": "Sub Category Details",
+        "main_category_options": {
+            "default": "Select Main Category",
+            "Coating & decorations colours": "Coating & decorations colours",
+            "decal": "Decal",
+            "glass": "Glass",
+            "porcelain": "Porcelain"
+        },
+        "sub_category_options": {
+            "default": "Select Sub Category",
+            "glass_ceramic_colours": "Glass & Ceramic Colours",
+            "organic_colours": "Organic Colours",
+            "luster": "Luster",
+            "materials": "Materials",
+            "plain": "Plain",
+            "decorated": "Decorated"
+        },
+        "sub_category_details_options": {
+            "default": "Select Sub Category Details",
+            "temp_range": "750°-850°",
+            "temp_range_low": "550°-600°",
+            "solvent_based_colours": "Solvent Based Colours",
+            "water_based_colours": "Water Based Colours",
+            "safe_food_colours": "Safe Food Colours",
+            "paper": "Paper",
+            "screen_printing_oil": "Screen Printing Oil",
+            "cover_coat": "Cover Coat",
+            "powder_colour": "Powder Colour",
+            "custom": "Custom"
+        },
+        "add_product": "Add product",
+        "product_name": "Product name",
+        "details": "Details",
+        "upload_main_image": "Upload main image",
+        "upload_secondary_images": "Upload secondary images",
+        "close": "Close",
+        "reset": "Reset",
+        "save_changes": "Save changes",
+        "remove_product": "Remove",
+        "product_card": {
+            "name": "Product name",
+            "category": "Category",
+            "details": "Details"
+        }
+    },
+    "products": {
+        "products": "Products",
+        "search_by_category": "Search by category",
+        "search_by_subcategory": "Search by subcategory",
+        "details": "Details"
+    },
+    "productDetails": {
+        "title": "Product Name",
+        "details": "Product Details",
+        "categories": "Categories:",
+        "mainCategory": "Main Category",
+        "subCategory": "Sub Category",
+        "subCategoryDetails": "Sub Category Details",
+        "moreDetails": "More Details"
+    }
+}

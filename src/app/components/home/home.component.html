@@ -1,0 +1,202 @@
+<!-------------------------------  main-slider ----------------------->
+<section class="main-carousel  pt-5">
+  <div class="w-100 ">
+    <owl-carousel-o [options]="mainSlider">
+      <ng-template carouselSlide><img loading="lazy" width="1920"
+          src="./assets/images/11zon_compressed/contactUs-bgTwo_9_11zon.webp" class="object-fit-cover vh-50 w-100"
+          alt="contactus"></ng-template>
+      <ng-template carouselSlide><img loading="lazy" width="1920"
+          src="./assets/images/11zon_compressed/bg-events_4_11zon.webp" class="object-fit-cover vh-50 w-100"
+          alt="events"></ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<!------------------------------- company-info ----------------------->
+<section class="company-info py-5 position-relative overflow-hidden">
+  <div class="container">
+    <div class="main-title text-center mb-5">
+      <h3 class="position-relative d-inline-block">{{ 'Home.COMPANY_INFO_TITLE' | translate }}</h3>
+      <div class="line bg-yellow-color pt-1 mb-4 mx-auto"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 mb-5">
+        <div class="info">
+          <div class="content-circle"></div>
+          <h2 class="w-75 mx-auto mx-md-1">{{ 'Home.COMPANY_WELCOME_MSG' | translate }}</h2>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="img-layer d-flex justify-content-center">
+          <div class="main-img">
+            <img loading="lazy" src="./assets/images/11zon_compressed/big-logo.png" class="img-fluid" alt="main-img">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------------------- second-Slider ----------------------->
+<section class="bg-off-white py-5">
+  <div class="container slider-container">
+    <owl-carousel-o [options]="secondSlider">
+      <ng-template carouselSlide><img loading="lazy" style="width: 250px;"
+          src="../../../assets/from/colorobbia-logo-bianco.webp" class="w-100 object-fit-contain slider-H"
+          alt="logo"></ng-template>
+      <ng-template carouselSlide><img loading="lazy" style="width: 250px;" src="../../../assets/from/logo_web.webp"
+          class="w-100 object-fit-contain slider-H" alt="logo"></ng-template>
+      <ng-template carouselSlide><img loading="lazy" style="width: 250px;"
+          src="../../../assets/from/Logo-Hicoat-01.webp" class="w-100 object-fit-contain slider-H"
+          alt="logo"></ng-template>
+      <ng-template carouselSlide><img loading="lazy" style="width: 250px;"
+          src="../../../assets/from/logo-ceramvetro-gold-new-367w.webp" class="w-100 object-fit-contain slider-H"
+          alt="logo"></ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<!-------------------------------  our-proudcts   ----------------------->
+<section class="products-home py-5">
+  <div class="container">
+    <div class="main-title text-center mb-5">
+      <h3 class="position-relative d-inline-block">{{ 'Home.OUR_PRODUCTS' | translate }}</h3>
+      <div class="line bg-yellow-color pt-1 mb-4 mx-auto"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="product-info">
+          <div class="product-content position-relative overflow-hidden">
+            <img loading="lazy" src="./assets/images/11zon_compressed/about1_1_11zon.webp"
+              class="img-fluid rounded-4 shadow-sm" alt="{{ 'Home.COATING_PRODUCT_ALT' | translate }}" width="500"
+              height="500">
+            <div
+              class="img-layer position-absolute h-100 w-100 d-flex flex-column justify-content-center align-items-center rounded-4">
+              <p class="fw-semibold">{{ 'Home.COATING' | translate }}</p>
+              <p class="w-100 text-center">{{ 'Home.COATING_DESCRIPTION' | translate }}</p>
+              <button routerLink="/products" class="btn btn-primary">{{ 'Home.DETAILS' | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="product-info">
+          <div class="product-content position-relative overflow-hidden">
+            <img loading="lazy" src="./assets/images/11zon_compressed/vases_12_11zon.webp"
+              class="img-fluid rounded-4 shadow-sm" alt="{{ 'Home.DECAL_PRODUCT_ALT' | translate }}" width="500"
+              height="500">
+            <div
+              class="img-layer position-absolute h-100 w-100 d-flex flex-column justify-content-center align-items-center rounded-4">
+              <p class="fw-semibold">{{ 'Home.DECAL' | translate }}</p>
+              <p class="w-100 text-center">{{ 'Home.DECAL_DESCRIPTION' | translate }}</p>
+              <button routerLink="/products" class="btn btn-primary">{{ 'Home.DETAILS' | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="product-info">
+          <div class="product-content position-relative overflow-hidden">
+            <img loading="lazy" src="./assets/images/11zon_compressed/about2_2_11zon.webp"
+              class="img-fluid rounded-4 shadow-sm" alt="{{ 'Home.PORCELAIN_PRODUCT_ALT' | translate }}" width="500"
+              height="500">
+            <div
+              class="img-layer position-absolute h-100 w-100 d-flex flex-column justify-content-center align-items-center rounded-4">
+              <p class="fw-semibold">{{ 'Home.PORCELAIN' | translate }}</p>
+              <p class="w-100 text-center">{{ 'Home.PORCELAIN_DESCRIPTION' | translate }}</p>
+              <button routerLink="/products" class="btn btn-primary">{{ 'Home.DETAILS' | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="product-info">
+          <div class="product-content position-relative overflow-hidden">
+            <img loading="lazy" src="./assets/images/11zon_compressed/about1_1_11zon.webp"
+              class="img-fluid rounded-4 shadow-sm" alt="{{ 'Home.GLASS_PRODUCT_ALT' | translate }}" width="500"
+              height="500">
+            <div
+              class="img-layer position-absolute h-100 w-100 d-flex flex-column justify-content-center align-items-center rounded-4">
+              <p class="fw-semibold">{{ 'Home.GLASS' | translate }}</p>
+              <p class="w-100 text-center">{{ 'Home.GLASS_DESCRIPTION' | translate }}</p>
+              <button routerLink="/products" class="btn btn-primary">{{ 'Home.DETAILS' | translate }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------------  Brands   ----------------------->
+<section class="brands bg-off-white py-5">
+  <div class="container">
+    <div class="main-title text-center mb-5">
+      <h3 class="position-relative d-inline-block">{{ "Home.Brands" | translate }}</h3>
+      <div class="line bg-yellow-color pt-1 mb-4 mx-auto"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="brand-img">
+          <img loading="lazy" src="../../../assets/to/3333-1.webp" alt="brand-img" width="500" height="100">
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="brand-img">
+          <img loading="lazy" src="../../../assets/to/Artboard-26_4x-8.webp" alt="brand-img" width="500" height="100">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="brand-img">
+          <img loading="lazy" src="../../../assets/to/logopngwhite.png" alt="brand-img" width="500" height="100">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="container my-5">
+    <owl-carousel-o [options]="feedback">
+      <ng-template carouselSlide>
+        <div class="testimonial-item d-flex justify-content-evenly align-items-center">
+          <div class="img-layer">
+            <img loading="lazy" src="./assets/Frame 138.png" alt="{{ 'Home.testimonial.shahd.alt' | translate }}"
+              width="150" height="150">
+            <div class="img-frame"></div>
+          </div>
+
+          <div class="content mt-5 mt-md-0">
+            <div class="name">{{ 'Home.testimonial.shahd.name' | translate }}</div>
+            <div class="title">{{ 'Home.testimonial.shahd.title' | translate }}</div>
+            <div class="quote">
+              <p>{{ 'Home.testimonial.shahd.quote' | translate }}</p>
+            </div>
+            <div class="hashtag">#VISION</div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="testimonial-item d-flex justify-content-evenly align-items-center">
+          <div class="img-layer">
+            <div class="img-frame"></div>
+            <img loading="lazy" src="./assets/Frame 138.png" alt="{{ 'Home.testimonial.maya.alt' | translate }}"
+              width="150" height="150">
+          </div>
+
+          <div class="content mt-5 mt-md-0">
+            <div class="name">{{ 'Home.testimonial.maya.name' | translate }}</div>
+            <div class="title">{{ 'Home.testimonial.maya.title' | translate }}</div>
+            <div class="quote">
+              <p>{{ 'Home.testimonial.maya.quote' | translate }}</p>
+            </div>
+            <div class="hashtag">#VISION</div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>

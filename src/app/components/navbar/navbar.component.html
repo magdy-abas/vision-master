@@ -1,0 +1,75 @@
+<!-- navbar -->
+<nav [ngClass]="{'scrolled': isScrolled}" class="navbar navbar-dark fixed-top shadow bg-dark-blue navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" routerLink="home">
+      <img loading="lazy" src="./assets/images/11zon_compressed/nav-logo.png" alt="logo" height="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end bg-dark-blue" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Vision</h5>
+        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="nav-link-active" routerLink="home">{{ 'navbar.home' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="nav-link-active" routerLink="events">{{ 'navbar.events' | translate
+              }}</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a routerLinkActive="nav-link-active" id="dropdown" class="nav-link dblClick dropdown-toggle"
+              routerLink="products" role="button" data-bs-auto-close="outside" aria-expanded="false"
+              data-bs-toggle="dropdown">
+              {{ 'navbar.product' | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="nav-link-active" routerLink="contact">{{ 'navbar.contact_us' |
+              translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="nav-link-active" routerLink="aboutus">{{ 'navbar.about_us' | translate
+              }}</a>
+          </li>
+
+          <!-- Admin link using @if -->
+          @if (isAdmin) {
+          <ng-container>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="nav-link-active" routerLink="dashboard">{{ 'navbar.dashboard' |
+                translate }}</a>
+            </li>
+          </ng-container>
+          }
+
+
+          <!-- Language switcher -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ 'navbar.lang' | translate }}
+            </a>
+            <ul class="dropdown-menu">
+              <li (click)="change('en')">
+                <a class="dropdown-item cr">{{ 'navbar.en' | translate }}</a>
+              </li>
+              <li (click)="change('ar')">
+                <a class="dropdown-item cr">{{ 'navbar.ar' | translate }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- offcanvas -->
+  </div>
+</nav>
+<!-- navbar -->

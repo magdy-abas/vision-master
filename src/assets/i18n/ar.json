@@ -1,0 +1,162 @@
+{
+    "Home": {
+        "COMPANY_INFO_TITLE": "من نحن",
+        "COMPANY_WELCOME_MSG": "مرحبًا بكم في \"VISION\"، بوابتكم إلى عالم الحرفية والابتكار المصري.",
+        "OUR_PRODUCTS": "منتجاتنا",
+        "COATING": "الطلاء",
+        "COATING_DESCRIPTION": "الطلاء هو طبقة تغطي سطح شيء ما.",
+        "DECAL": "الملصقات",
+        "DECAL_DESCRIPTION": "الطلاء هو طبقة تغطي سطح شيء ما.",
+        "PORCELAIN": "الخزف",
+        "PORCELAIN_DESCRIPTION": "الطلاء هو طبقة تغطي سطح شيء ما.",
+        "GLASS": "الزجاج",
+        "GLASS_DESCRIPTION": "الطلاء هو طبقة تغطي سطح شيء ما.",
+        "DETAILS": "التفاصيل",
+        "COATING_PRODUCT_ALT": "منتج الطلاء",
+        "DECAL_PRODUCT_ALT": "منتج الملصقات",
+        "PORCELAIN_PRODUCT_ALT": "منتج الخزف",
+        "GLASS_PRODUCT_ALT": "منتج الزجاج",
+        "Brands": "الماركات",
+        "testimonial": {
+            "shahd": {
+                "alt": "شهد",
+                "name": "شهد",
+                "title": "رحلة مايا جونسون",
+                "quote": "في \"أصبح أنا: رحلة مايا جونسون\"، سيكتشف القراء القصة الملهمة لامرأة اتبعت شغفها، وتغلبت على التحديات، وأحدثت فرقًا في عالم التكنولوجيا. تمثل رحلة مايا تذكيرًا بأن بالإرادة والمثابرة، كل شيء ممكن."
+            },
+            "maya": {
+                "alt": "مايا",
+                "name": "مايا",
+                "title": "رحلة مايا جونسون",
+                "quote": "في \"أصبح أنا: رحلة مايا جونسون\"، سيكتشف القراء القصة الملهمة لامرأة اتبعت شغفها، وتغلبت على التحديات، وأحدثت فرقًا في عالم التكنولوجيا. تمثل رحلة مايا تذكيرًا بأن بالإرادة والمثابرة، كل شيء ممكن."
+            }
+        }
+    },
+    "navbar": {
+        "lang": "اللغة",
+        "dashboard": "لوحة التحكم",
+        "en": "الإنجليزية",
+        "ar": "العربية",
+        "home": "الرئيسية",
+        "events": "الفعاليات",
+        "product": "منتجاتنا",
+        "coating": "الطلاء",
+        "glass_ceramic_colors": "ألوان الزجاج والسيراميك",
+        "organic_colors": "الألوان العضوية",
+        "luster": "البريق",
+        "decal": "الديكال",
+        "materials": "الخامات",
+        "pattern": "النقش",
+        "glass": "الزجاج",
+        "plain_glass": "عادي",
+        "decorated_glass": "مزخرف",
+        "porcelain": "الخزف",
+        "plain_porcelain": "عادي",
+        "decorated_porcelain": "مزخرف",
+        "contact_us": "اتصل بنا",
+        "about_us": "من نحن"
+    },
+    "about": {
+        "about_us": "عنا",
+        "our_story": "قصتنا",
+        "welcome_paragraph_1": "مرحبًا بكم في Vision، بوابتكم إلى عالم الحرفية والابتكار المصري.",
+        "welcome_paragraph_2": "يقع مقر Vision في مصر، وهي متجذرة بعمق في تقاليد البلاد الغنية بالحرف اليدوية، مع التركيز على تزيين الزجاج والخزف.",
+        "location_paragraph": "يقع مقرنا في مدينة سمنود، التي اشتهرت تاريخيًا بصناعة الفخار، وتبنت التطور في فن الحرف اليدوية.",
+        "commitment_paragraph": "مع الالتزام بالتحديث، تعمل Vision على إحياء قطاع صناعة الزجاج في مصر، مجهزةً المصنّعين المحليين بأحدث التقنيات والمواد.",
+        "participation_paragraph": "لقد رسخت مشاركتنا في الفعاليات والمعارض دورنا في تعزيز التعاون والابتكار.",
+        "website_paragraph": "يمثل هذا الموقع لحظة محورية لـ Vision، مما يشير إلى طموحنا للتوسع عالميًا."
+    },
+    "events": {
+        "title": "الفعاليات",
+        "available_events": "الفعاليات المتاحة",
+        "name": "ICES (معرض ومؤتمر المدن الذكية)",
+        "location": "القاهرة",
+        "date": "مايو 2024"
+    },
+    "contact": {
+        "title": "اتصل بنا",
+        "send_message": "أرسل لنا رسالة!",
+        "form": {
+            "name": "الاسم*",
+            "email": "البريد الإلكتروني*",
+            "company": "الشركة",
+            "website": "الموقع الإلكتروني",
+            "country": "البلد",
+            "phone": "الهاتف",
+            "message": "الرسالة",
+            "submit": "إرسال"
+        },
+        "address": {
+            "phone": "01024980379",
+            "email": "vision@gmail.com",
+            "location": "سمنود، الغربية، مصر. ساحة النحاس، برج زايد، الطابق السابع، رقم 701."
+        }
+    },
+    "footer": {
+        "rights_reserved": "جميع الحقوق محفوظة"
+    },
+    "Dashboard": {
+        "dashboard": "لوحة التحكم",
+        "main_category": "الفئة الرئيسية",
+        "sub_category": "الفئة الفرعية",
+        "sub_category_details": "تفاصيل الفئة الفرعية",
+        "main_category_options": {
+            "default": "اختر فئة رئيسية",
+            "Coating & decorations colours": "ألوان الطلاء والزخرفة",
+            "decal": "ديكال",
+            "glass": "زجاج",
+            "porcelain": "بورسلين"
+        },
+        "sub_category_options": {
+            "default": "اختر فئة فرعية",
+            "glass_ceramic_colours": "ألوان الزجاج والسيراميك",
+            "organic_colours": "ألوان عضوية",
+            "luster": "ألوان لاستر معدني",
+            "materials": "مواد",
+            "plain": "سادة",
+            "decorated": "مزخرف"
+        },
+        "sub_category_details_options": {
+            "default": "اختر تفاصيل الفئة الفرعية",
+            "temp_range": "750°-850°",
+            "temp_range_low": "550°-600°",
+            "solvent_based_colours":"ألوان (مذيب كحولي)",
+            "water_based_colours":"ألوان (مذيب مائي)",
+            "safe_food_colours": "الوان صحية للغذاء",
+            "paper": "ورق",
+            "screen_printing_oil":"زيت وسيط للطباعة",
+            "cover_coat": "غطاء جلاتيني",
+            "powder_colour": "ألوان بودرة",
+            "custom": "مخصص"
+        },
+        "add_product": "إضافة منتج",
+        "product_name": "اسم المنتج",
+        "details": "التفاصيل",
+        "upload_main_image": "تحميل الصورة الرئيسية",
+        "upload_secondary_images": "تحميل الصور الثانوية",
+        "close": "إغلاق",
+        "reset": "إعادة تعيين",
+        "save_changes": "حفظ التغييرات",
+        "remove_product": "إزالة",
+        "product_card": {
+            "name": "اسم المنتج",
+            "category": "الفئة",
+            "details": "التفاصيل"
+        }
+    },
+    "products": {
+        "products": "المنتجات",
+        "search_by_category": "البحث حسب الفئة",
+        "search_by_subcategory": "البحث حسب الفئة الفرعية",
+        "details": "التفاصيل"
+    },
+    "productDetails": {
+        "title": "اسم المنتج",
+        "details": "تفاصيل المنتج",
+        "categories": "الفئات:",
+        "mainCategory": "الفئة الرئيسية",
+        "subCategory": "الفئة الفرعية",
+        "subCategoryDetails": "تفاصيل الفئة الفرعية",
+        "moreDetails": "المزيد من التفاصيل"
+    }
+}
